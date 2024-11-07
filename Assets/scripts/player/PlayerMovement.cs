@@ -1,85 +1,40 @@
-
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Variables de movimiento
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
-    private float moveInput;
+    public float moveSpeed = 5f;       // Velocidad de movimiento
+    public float jumpForce = 10f;      // Fuerza del salto
+    public Transform groundCheck;      // Punto de chequeo del suelo
+    public LayerMask groundLayer;      // Capa del suelo para detectar si el personaje está tocando el suelo
 
-    // Referencias al Rigidbody2D y al ground check
-    private Rigidbody2D rb;
-    public Transform groundCheck;
-    public float checkRadius;
-    public LayerMask whatIsGround;
-    private bool isGrounded;
-    private Animator animator;
-    private bool facingRight = true; // Variable para controlar la dirección del sprite
+    private Rigidbody rb;
+    private bool isGrounded;           // Indica si el personaje está tocando el suelo
+    private float groundCheckRadius = 0.2f; // Radio para detectar el suelo
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        // Obtener el Rigidbody del personaje
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true; // Evitar rotaciones del personaje
     }
 
     private void Update()
     {
-        moveInput = Input.GetAxis("Horizontal");
+        // Chequear si está tocando el suelo
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
         // Movimiento horizontal
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        float moveInput = Input.GetAxisRaw("Horizontal");
+        Vector3 moveVelocity = new Vector3(moveInput * moveSpeed, rb.velocity.y, 0f);
+        rb.velocity = moveVelocity;
 
-        // Voltear el sprite según la dirección
-        if (moveInput > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (moveInput < 0 && facingRight)
-        {
-            Flip();
-        }
+        // Animar el personaje (opcional, si tienes animaciones)
+        // Animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
-        // Actualizar animación de correr
-        if (Mathf.Abs(moveInput) > 0)
-        {
-            animator.SetBool("run", true);
-        }
-        else
-        {
-            animator.SetBool("run", false);
-        }
-
-        // Verificar si el jugador está en el suelo
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        // Saltar
+        // Salto
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0f);
         }
-
-        // Interacción
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Interact();
-        }
-    }
-
-    private void Flip()
-    {
-        // Voltear el sprite
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-
-    private void Interact()
-    {
-        // Implementa aquí la lógica de interacción
-        Debug.Log("Interacción realizada");
     }
 }
-
-
