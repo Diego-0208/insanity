@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;      // Fuerza del salto
     public Transform groundCheck;      // Punto de chequeo del suelo
     public LayerMask groundLayer;      // Capa del suelo para detectar si el personaje está tocando el suelo
+    public bool canFlip = true;        // Variable para controlar si el personaje puede voltearse
 
     private Rigidbody rb;
     private bool isGrounded;           // Indica si el personaje está tocando el suelo
@@ -28,6 +29,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveVelocity = new Vector3(moveInput * moveSpeed, rb.velocity.y, 0f);
         rb.velocity = moveVelocity;
 
+        // Voltear el personaje si se mueve hacia la izquierda o derecha
+        if (canFlip && moveInput != 0)
+        {
+            // Cambiar la escala en X para voltear el personaje
+            transform.localScale = new Vector3(Mathf.Sign(moveInput), 1f, 1f);
+        }
+
         // Animar el personaje (opcional, si tienes animaciones)
         // Animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
@@ -38,3 +46,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+ 
