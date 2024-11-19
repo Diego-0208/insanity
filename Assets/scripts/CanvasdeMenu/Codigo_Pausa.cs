@@ -21,7 +21,7 @@ public class Codigo_Pausa : MonoBehaviour
             {
                 ObjectoMenuPausa.gameObject.SetActive(true);
                 Pausa = true;
-                Time.timeScale = 0;
+                Time.timeScale = 1;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
