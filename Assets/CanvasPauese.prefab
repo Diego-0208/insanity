@@ -454,7 +454,6 @@ GameObject:
   - component: {fileID: 813312330431052921}
   - component: {fileID: 2288602723743522237}
   - component: {fileID: 8938191793251387288}
-  - component: {fileID: 6540606944064179468}
   m_Layer: 5
   m_Name: CanvasPauese
   m_TagString: Untagged
@@ -545,20 +544,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6540606944064179468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4621178325588685682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87af02c2c6b2d1c458439ef207290498, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectoMenuPausa: {fileID: 501822478476816611}
-  Pausa: 0
 --- !u!1 &4638705186212744189
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6540606944064179468}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Codigo_Pausa, Assembly-CSharp
         m_MethodName: IrAlmenu
         m_Mode: 5
@@ -947,7 +932,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6540606944064179468}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Codigo_Pausa, Assembly-CSharp
         m_MethodName: Resumir
         m_Mode: 1
@@ -1080,7 +1065,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6540606944064179468}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Codigo_Pausa, Assembly-CSharp
         m_MethodName: SalirDelJuego
         m_Mode: 1
