@@ -107,7 +107,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Salir '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 3523781131932738199, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -241,7 +241,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reanudar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 3523781131932738199, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -375,7 +375,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Menu Principal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 3523781131932738199, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4621178325588685682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb77fe9be55d42408c5fbe476a69998, type: 3}
+  m_Script: {fileID: 11500000, guid: 87af02c2c6b2d1c458439ef207290498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectoMenuPausa: {fileID: 501822478476816611}
@@ -759,7 +759,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Pause '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 3523781131932738199, guid: 32bb3c628fbfbbf4e995061736dbbc57, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
