@@ -25,13 +25,28 @@ public class Codigo_Salud : MonoBehaviour
         if (Salud <= 0)
         {
             Salud = 0; // Asegúrate de que la salud no sea negativa
-            GameManager.Instance.PlayerDied(); // Llama al método PlayerDied del GameManager
+            RespawnAtCheckpoint(); // Llama al método para reaparecer en el checkpoint
         }
     }
 
     void ActualizarInterfaz()
     {
-        BarraSalud.fillAmount = Salud / SaludMaxima;       
+        BarraSalud.fillAmount = Salud / SaludMaxima;
         TextoSalud.text = "+" + Salud.ToString("f0");
+    }
+
+    private void RespawnAtCheckpoint()
+    {
+        if (Checkpoint.GetCheckpointPosition() != Vector3.zero)
+        {
+            transform.position = Checkpoint.GetCheckpointPosition(); // Reaparece en el checkpoint
+            Salud = SaludMaxima; // Restaura la salud al máximo
+            Debug.Log("Reapareciendo en el último checkpoint...");
+        }
+        else
+        {
+            Debug.LogWarning("No hay checkpoints activados. Reapareciendo en el punto inicial.");
+            transform.position = Vector3.zero; // Por defecto, reaparece en (0, 0, 0) si no hay checkpoint
+        }
     }
 }

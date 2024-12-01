@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 849505662}
   - component: {fileID: 849505661}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image de microfono muteado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,10 +1130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1696349539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b85d7c91ba18d24bb5ef2ef52ef6543, type: 3}
+  m_Script: {fileID: 11500000, guid: f046c3338b0dba34c8190d2c7753d4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1696349541
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1740939504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4edc76c7a43d0ba45b58240f595e6ac5, type: 3}
+  m_Script: {fileID: 11500000, guid: c1a8458e3f3102f47ad3b09b9539ef77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 389483048}
