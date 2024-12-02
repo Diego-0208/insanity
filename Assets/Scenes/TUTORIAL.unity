@@ -149,11 +149,11 @@ Transform:
   m_GameObject: {fileID: 33854150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.637804, y: -17.298414, z: -0.15807295}
+  m_LocalPosition: {x: -0.18670225, y: -16.391352, z: 10.449257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1629357880}
+  m_Father: {fileID: 1769633298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &33854152
 BoxCollider:
@@ -527,8 +527,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 3.1901531, z: 1}
-  m_Center: {x: 0, y: 1.0950769, z: 0}
+  m_Size: {x: 1, y: 8.850386, z: 1}
+  m_Center: {x: 0, y: 3.9251928, z: 0}
 --- !u!4 &471143063
 Transform:
   m_ObjectHideFlags: 0
@@ -538,11 +538,11 @@ Transform:
   m_GameObject: {fileID: 471143061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.946804, y: -16.270514, z: 0}
+  m_LocalPosition: {x: -15.495703, y: -15.363451, z: 10.60733}
   m_LocalScale: {x: 0.5571644, y: 2.5366437, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1629357880}
+  m_Father: {fileID: 1769633298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614991784
 GameObject:
@@ -675,11 +675,11 @@ Transform:
   m_GameObject: {fileID: 705357565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.48, y: -9.6, z: 0}
+  m_LocalPosition: {x: 68.93111, y: -8.692938, z: 10.60733}
   m_LocalScale: {x: 0.5571644, y: 2.5366437, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1629357880}
+  m_Father: {fileID: 1769633298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &705357567
 BoxCollider:
@@ -1214,6 +1214,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1629357880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1258587682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258587683}
+  - component: {fileID: 1258587684}
+  m_Layer: 0
+  m_Name: muro invisible2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258587683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258587682}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18670225, y: 4.217062, z: 10.449257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1769633298}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1258587684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258587682}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 92.67679, y: 1, z: 1}
+  m_Center: {x: 30.132248, y: 0, z: 0}
 --- !u!1 &1454502424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,8 +1402,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1726679593}
-  - {fileID: 471143063}
-  - {fileID: 705357566}
   - {fileID: 614991788}
   - {fileID: 408283585}
   - {fileID: 1091340678}
@@ -1365,7 +1416,6 @@ Transform:
   - {fileID: 2042171363}
   - {fileID: 849435902}
   - {fileID: 1968899979}
-  - {fileID: 33854151}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726679589
@@ -1577,6 +1627,41 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1629357880}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1769633297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769633298}
+  m_Layer: 0
+  m_Name: muros_invisibles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1769633298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769633297}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1867023, y: 15.680351, z: -17.411257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 471143063}
+  - {fileID: 705357566}
+  - {fileID: 33854151}
+  - {fileID: 1258587683}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1859073463
 GameObject:
@@ -2099,3 +2184,4 @@ SceneRoots:
   - {fileID: 874176945}
   - {fileID: 2058273523}
   - {fileID: 1629357880}
+  - {fileID: 1769633298}
