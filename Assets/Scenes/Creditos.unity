@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gracias por jugar mi  juego :)
+  m_text: 'Gracias por jugarr a nuestro  juego :)
 
 '
   m_isRightToLeft: 0
@@ -316,11 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dafont:
-
-    Wartorn de Andreas Johansson
-
-'
+  m_text: "Dafont:\nPixels \u20AC de Ayden Snider\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1018,7 +1014,7 @@ GameObject:
   - component: {fileID: 1048352729}
   - component: {fileID: 1048352728}
   m_Layer: 5
-  m_Name: Modelos
+  m_Name: Assets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,9 +1059,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Modelos:
+  m_text: 'Assets:
 
-    Sacados de unity asset store'
+    creados por Benjamin Olivares '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1201,7 +1197,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Scripts:
 
-    ChatGPT.
+    ChatGPT
 
 '
   m_isRightToLeft: 0
@@ -1337,7 +1333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Creador:\nDiego Alvear \n"
+  m_text: "Creador:\nDiego Alvear \nBenjamin Olivares"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
