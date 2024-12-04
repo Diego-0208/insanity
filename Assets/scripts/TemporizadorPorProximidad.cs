@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement; // Asegúrate de incluir esta línea para poder cambiar de escena
 
 public class TemporizadorPorProximidad : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class TemporizadorPorProximidad : MonoBehaviour
     public GameObject objetoADestruir; // Objeto a destruir cuando llegue a 0
     public float radioActivacion = 5f; // Radio en el que se activa el temporizador
     public Transform jugador; // Referencia al jugador (con tag "Player")
+    public string escenaCreditos = "Creditos"; // Nombre de la escena de créditos
 
     private float tiempoRestante;
     private bool dentroDelRadio = false;
@@ -33,6 +35,7 @@ public class TemporizadorPorProximidad : MonoBehaviour
             {
                 tiempoRestante = 0; // Evita valores negativos
                 DestruirObjeto(); // Llama a la función para destruir el objeto
+                CambiarEscenaCreditos(); // Cambia la escena a los créditos
             }
         }
     }
@@ -57,5 +60,11 @@ public class TemporizadorPorProximidad : MonoBehaviour
         {
             Destroy(objetoADestruir); // Destruye el objeto
         }
+    }
+
+    // Función para cambiar la escena a los créditos
+    void CambiarEscenaCreditos()
+    {
+        SceneManager.LoadScene(escenaCreditos); // Cambia a la escena de créditos
     }
 }
